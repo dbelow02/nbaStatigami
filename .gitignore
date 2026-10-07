@@ -1,0 +1,6 @@
+.env
+*.txt
+models/*
+__pycache__/*
+results/*
+.DS_Store

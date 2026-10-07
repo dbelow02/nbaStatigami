@@ -1,0 +1,16 @@
+services:
+  nbastats:
+    build: .
+    image: nbastats:latest
+    env_file:
+      - ../.env
+    environment:
+      - NBA_DATA_DIR=/data
+      - NBA_MODEL_DIR=/models
+      - NBA_RESULTS_DIR=/results
+      - TZ=America/New_York
+    volumes:
+      - ../Data:/data:ro   # read-only
+      - ./models:/models
+      - ./results:/results
+      - ../logs:/logs

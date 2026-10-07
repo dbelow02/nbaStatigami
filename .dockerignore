@@ -1,0 +1,11 @@
+# Mounted at runtime, so keep them out of the image
+models/
+*.pkl
+*.csv
+logs/
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+.git/
